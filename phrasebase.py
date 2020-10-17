@@ -6,6 +6,10 @@ from colorama import Fore, init
 import argparse
 
 
+# set path to the directory where the paper jsons are located.
+path ="./Papers"
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Searches through thousands of papers and tries to match a certain input string")
@@ -20,9 +24,6 @@ def main():
 
     # important for colorama on windows
     init()
-
-    # set path to the directory where the paper jsons are located.
-    path = r"D:\pmc_json"
 
     pattern = input("What string are you searching for? (Regex are allowed): ")
 
@@ -49,4 +50,8 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    # prevents error when pressing ctrl+c
+    except KeyboardInterrupt:
+        pass
