@@ -21,3 +21,13 @@ However, you can stop the unziping at any point and only work with a fraction of
 
 
 ##How to use
+Simply run `python phrasebase.py` inside of the `PhraseBase` enviroment. 
+Afterwards you can type in the string you are looking for. Regular expressions can be used.
+The program will then iterate through ever json file which is located in the path that you specified.
+You can stop this process at any time by pressing `ctrl+c` to look at the results.
+
+You can also run `python phrasebase.py --IGNORECASE`, which will ignore subsequently ignore upper/lower case of your input string.
+
+Running `python phrasebase.py --exact` will only return exact matches.
+
+![showcase](./images/showcase.gif)

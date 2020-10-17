@@ -27,10 +27,14 @@ def main():
 
     pattern = input("What string are you searching for? (Regex are allowed): ")
 
-    if args.IGNORECASE:
+    if args.IGNORECASE and args.exact:
+        pattern = pattern.strip()
+        pattern = re.compile(f" {pattern} ", flags=re.IGNORECASE)
+
+    elif args.IGNORECASE:
         pattern = re.compile(pattern, flags=re.IGNORECASE)
 
-    if args.exact:
+    elif args.exact:
         pattern = pattern.strip()
         pattern = re.compile(f" {pattern} ")
 
