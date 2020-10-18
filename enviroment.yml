@@ -6,3 +6,4 @@ dependencies:
   - pip=20.0.2
   - tqdm=4.50.2
   - colorama=0.4.3
+  - psutil=5.7.2
