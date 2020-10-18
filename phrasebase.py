@@ -5,9 +5,9 @@ from tqdm import tqdm
 from colorama import Fore, init
 import argparse
 
-
-# set path to the directory where the paper jsons are located.
-path ="./Papers"
+# Modify the path.txt, so that the path in there points to the location of the papers.
+with open("path.txt", "r") as f:
+    path = f.read().strip()
 
 
 def main():
