@@ -31,4 +31,4 @@ You can also run `python phrasebase.py --IGNORECASE`, which will ignore subseque
 
 Running `python phrasebase.py --exact` will only return exact matches.
 
-![showcase](./images/showcase.gif)
+![showcase](./images/showcase%20.gif)
