@@ -2,7 +2,7 @@
 This is a really small program, which can be used to quickly search through thousands of different papers for a specific
 phrase or expression. 
 
-##Installation
+## Installation
 1. Download the papers through which the program will search from [kaggle](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge?select=document_parses). 
 ![Kaggle dowload](./images/kaggle_download.PNG "Kaggle download")
 
@@ -17,10 +17,11 @@ However, you can stop the unziping at any point and only work with a fraction of
     conda activate PhraseBase
     ```
    
-4. Lastly, open `phrasebase.py` and modify line 10, so that the path points to the directory where the json files are, which you downloaded in step 1.
+4. Lastly, modify `path.txt` so that the path points to the directory where the json files are, which you downloaded in step 1.
+The path has to look something like this `path/to/the/directory`.
 
 
-##How to use
+## How to use
 Simply run `python phrasebase.py` inside of the `PhraseBase` enviroment. 
 Afterwards you can type in the string you are looking for. Regular expressions can be used.
 The program will then iterate through ever json file which is located in the path that you specified.
