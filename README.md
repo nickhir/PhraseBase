@@ -12,7 +12,7 @@ However, you can stop the unziping at any point and only work with a fraction of
 3. clone the repository to the desired location and create an enviroment which contains all necessary packages
     ```
     git clone https://github.com/nickhir/PhraseBase.git
-    cd interactive-digit-recognition
+    cd PhraseBase
     conda env create -f environment.yml
     conda activate PhraseBase
     ```
